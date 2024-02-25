@@ -24,7 +24,7 @@ With those basic parts, I believe that my development environment turns extremel
 In practical terms, when I am developing some stuff, I just do anything inside of VSCode, as it run under Remote WSL, with a customized Oh My Zsh Integrated terminal and for every 
 development tools I just need of the vast plugins world that VSCode has to offer. In case I need a database, cache system, building tools, etc, I just use Docker.
 
-“*My goal is to install the minimum stuffs as possible.*”
+“*My goal is install the minimum stuffs as possible.*”
 
 ## WSL
 
