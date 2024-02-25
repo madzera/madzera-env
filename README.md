@@ -169,6 +169,6 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 2. You can configure the layout of your ohmyzsh by importing my configuration file inside your home directory or through prompt command.
 	- You can use my *.p10k.zsh* configuration file. Just copy the [file](./2_ohmyzsh/.p10k.zsh) and paste inside your Ubuntu home directory.
 	- To configure by prompt command and generating your own *.p10k.zsh* file, just run the command: `p10k configure`
-	- Then, choice your preffered styles: ![p10k prompt configuration](https://res.cloudinary.com/practicaldev/image/fetch/s--71QSuVWr--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/xf9fk2sgux1niog4vhpy.gif)
+	- Then, choose your preferred styles: ![p10k prompt configuration](https://res.cloudinary.com/practicaldev/image/fetch/s--71QSuVWr--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/xf9fk2sgux1niog4vhpy.gif)
 
 Now, you have a wonderful terminal, increasing your productivity drastically.
