@@ -77,9 +77,9 @@ is not fixed.
 		wsl --install
 		```
 2. After installation, set the *root* password for the *root* user.
-3. Inside of Microsoft Store, also install the **Windows Terminal**.
+3. Inside of Microsoft Store, also install the **Windows Terminal** (not mandatory, but recommended).
 ![Windows Terminal](./.img/windows_terminal.png)
-	3.1 You can use my preferences [`settings.json`](./src/main/java/com/madzera/happytree) by import (not mandatory).
+	3.1 You can use my preferences [`settings.json`](./1_wsl/settings.json) by import.
 	3.2 To import, paste the file inside of: ** *%LocalAppData%\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState* **
 
 
