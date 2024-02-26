@@ -16,8 +16,8 @@ My environment consist only into 4 parts:
 |---|---|
 | OS  | WSL  |
 | Shell  | Oh My Zsh  |
-| IDE  | Visual Studio Code  |
 | Services  | Docker  |
+| IDE  | Visual Studio Code  |
 
 With those basic parts, I believe that my development environment turns extremely portable, as I could manage to get the best of both Windows & Linux features, also I have a customized terminal with Oh My Zsh and an "All-in-One" development utilities inside of VSCode, including Docker containers.
 
@@ -172,3 +172,75 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 	- Then, choose your preferred styles: ![p10k prompt configuration](https://res.cloudinary.com/practicaldev/image/fetch/s--71QSuVWr--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/xf9fk2sgux1niog4vhpy.gif)
 
 Now, you have a wonderful terminal, increasing your productivity drastically.
+
+## Docker
+
+Nowadays, Docker is crucial for developing applications. It is a service platform that paravirtualize the essencial parts of a Linux Operative System providing only what your application needs and then put all necessary stuffs in a container. For generating a container, you need to build a image and consequently, your image becomes portable, passive for exportation.
+
+With Docker, the deploy application for prodution environment becomes uniform. This resolve the situation where things work fine in developer machine and not in production environment. With Docker, your application environment execution turns into one single environment, the same environment, the same container configuration defined in Docker image.
+
+Additionaly, you as a developer do not need to worry about the installation of tools like databases, servers applications, etc. You just need to import the image of those tools.
+
+There are two ways to install Docker inside Ubuntu distro, via Docker Desktop or Docker Engine. In this tutorial, I will focus only into the installation of Docker Engine, because it brings only what is necessary for the system, unlike the Docker Desktop. **Therefore, this section only will explain how to install the *Docker Engine* on Ubuntu* .
+
+### Installation
+
+Set up Docker's apt repository:
+
+```bash
+sudo apt-get update
+sudo apt-get install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+```
+
+Install the latest version of Docker packages:
+
+```bash
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+
+Verify if the installation has been successfully completed by running the command:
+
+```bash
+sudo docker run hello-world
+```
+Now, the output should be looks like: 
+![Docker test installation](./.img/docker_installation.png)
+
+If you see this, congratulation! We are almost there.
+
+### Configuration
+
+When Docker is installed, it runs as a service on the Ubuntu, meaning Docker Service (a.k.a *Docker Daemon*) must be started before you execute any command from your Docker Client. For security reasons, Docker Daemon does not startup everytime the Ubuntu initializes, because it has no permission to run as root-level, making you manually starting the Docker Daemon everytime your system initializes and being necessary to run any Docker command with `sudo`. To avoid this, you can create a group for Docker to grant root-level permission, so you do not need to type `sudo` everytime you input a command.
+
+**Note: from this procedure, Docker will run as root privilege. So, take care about what sort of images will be executed.**
+
+Create the `docker` group:
+```bash
+sudo groupadd docker
+```
+
+Add your user to the `docker` group:
+```bash
+sudo usermod -aG docker $USER
+```
+Log out and log back in so that your group membership is re-evaluated. You can also run the following command to activate the changes to groups:
+```bash
+newgrp docker
+```
+
+Verify that you can run `docker` commands without `sudo`:
+```bash
+docker run hello-world
+```
+
+## Visual Studio Code
+
