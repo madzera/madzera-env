@@ -221,7 +221,7 @@ If you can see this, congratulations! We are almost there.
 
 When Docker is installed, it runs as a service on Ubuntu, meaning Docker Service (a.k.a *Docker Daemon*) must be started before you execute any command from your Docker Client. For security reasons, Docker Daemon does not startup every time the Ubuntu initializes, because it has no permission to run as root-level, making you manually starting the Docker Daemon every time your system initializes and being necessary to run any Docker command with `sudo`. To avoid this, you can create a group for Docker to grant root-level permission, so you do not need to type `sudo` every time you input a command.
 
-**Note: from this procedure, Docker will run as root privilege. So, take care about what sort of images will be executed.**
+**Note: from this procedure, Docker will run as root privilege. So, take care about what sort of images will be built.**
 
 Create the `docker` group:
 ```bash
