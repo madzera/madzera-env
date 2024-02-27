@@ -244,3 +244,73 @@ docker run hello-world
 
 ## Visual Studio Code
 
+Technically, the VSCode is a text editor. This tool just born for the purpose of editing texts, initially without pretension to become what this tool is nowadays. Even though it is considered as a text editor, particularly, I consider VSCode an IDE, but not just any IDE, rather the best IDE. My consideration takes into account the fact that VSCode actually does all what other IDEs do, like:
+
+	- Real time compilation;
+	- Auto-completion assist;
+	- Debugging;
+	- Wonderful integration with software components (like databases, server applications, Git, Docker, Kubernetes etc.);
+	- Abundance of extra plugins;
+	- etc.
+
+In my opinion VSCode could not be defined like a simple text editor precisely because the reasons mentioned above. But why do I consider the VSCode being the best IDE?
+
+Answering this question, I can mention 3 reasons that made me to migrate from others IDE to use VSCode:
+
+1. Portable VSCode Settings
+	All settings configurated on your VSCode can be easily exported for the cloud, through your Microsoft or GitHub account. Everything that configures the workspace like hotkeys, general settings, profiles, plugins extensions, UI state, etc, can be saved and easily replaced again.
+	![Visual Studio Code settings](./.img/vscode_settings.png)
+	
+	Moreover, VSCode allows settings to be automatically imported to another machine instantaneously, without needing any action. The developer simply doesn't have to waste time reconfiguring their entire environment again, nor copying and pasting folders for settings to be reinstated. This feature received the name of ***Settings Sync**
+	![Visual Studio Code Settings Sync](./.img/vscode_settings_2.png)
+	
+	As you can see, I save my preferences into GitHub account. In my case, I usually use two machines and this feature simply is amazing for my situation.
+	
+2. Plugins Extensions
+	VSCode is what it is nowadays thankfully the world and extensive number of plugins, more than that, the plugins made by official providers are simply amazing. This world of plugins allow the VSCode having the ability to do literally anything. For instance, I usually work with Java language, and in 30 seconds I am able to create a *Spring Boot* from inside of VSCode. I do not need to go to *Spring Initializr*, because the plugin *Spring Boot Tools* already does the work! But I mentioned only one plugin, I have a lot of them!
+	
+	Every plugin extension has its associated ID. When you search for a plugin on VSCode by its name, at page detail the plugin ID is shown. The list of plugins that I've had installed is (by ID):
+	- alexisvt.flutter-snippets
+    - dart-code.dart-code
+    - dart-code.flutter
+    - donjayamanne.githistory
+    - eamodio.gitlens
+    - github.remotehub
+    - github.vscode-pull-request-github
+    - github.vscode-github-actions
+    - GitHub.copilot
+    - GitHub.copilot-chat
+    - golang.go
+    - googlecloudtools.cloudcode
+    - humao.rest-client
+    - johnpapa.vscode-peacock
+    - ms-azuretools.vscode-docker
+    - ms-ceintl.vscode-language-pack-pt-br
+    - ms-kubernetes-tools.vscode-kubernetes-tools
+    - ms-python.isort
+    - ms-python.python
+    - ms-python.vscode-pylance
+    - ms-vscode-remote.remote-containers
+    - ms-vscode-remote.remote-wsl
+    - ms-vscode.azure-repos
+    - ms-vscode.remote-repositories
+    - redhat.fabric8-analytics
+    - redhat.java
+    - redhat.vscode-community-server-connector
+    - redhat.vscode-rsp-ui
+    - redhat.vscode-yaml
+    - sonarsource.sonarlint-vscode
+    - streetsidesoftware.code-spell-checker
+    - visualstudioexptteam.intellicode-api-usage-examples
+    - visualstudioexptteam.vscodeintellicode
+    - visualstudioexptteam.vscodeintellicode-completions
+    - vmware.vscode-boot-dev-pack
+    - vmware.vscode-spring-boot
+    - vscjava.vscode-java-debug
+    - vscjava.vscode-java-dependency
+    - vscjava.vscode-java-pack
+    - vscjava.vscode-java-test
+    - vscjava.vscode-maven
+    - vscjava.vscode-spring-boot-dashboard
+    - vscjava.vscode-spring-initializr
+    - vue.volar
