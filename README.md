@@ -292,3 +292,4 @@ Then confirm that VSCode had been connected with success to your WSL instance:
 ![Visual Studio Code - WSL connected](./.img/vscode_wsl.png)
 
 Now you can develop your applications using the Windows VSCode pointing to your Linux system.
+
