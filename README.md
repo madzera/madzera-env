@@ -257,60 +257,38 @@ In my opinion VSCode could not be defined like a simple text editor precisely be
 
 Answering this question, I can mention 3 reasons that made me to migrate from others IDE to use VSCode:
 
-1. Portable VSCode Settings
-	All settings configurated on your VSCode can be easily exported for the cloud, through your Microsoft or GitHub account. Everything that configures the workspace like hotkeys, general settings, profiles, plugins extensions, UI state, etc, can be saved and easily replaced again.
-	![Visual Studio Code settings](./.img/vscode_settings.png)
+### Portable VSCode Settings
+
+All settings configurated on your VSCode can be easily exported for the cloud, through your Microsoft or GitHub account. Everything that configures the workspace like hotkeys, general settings, profiles, plugins extensions, UI state, etc, can be saved and easily replaced again.
+![Visual Studio Code settings](./.img/vscode_settings.png)
 	
-	Moreover, VSCode allows settings to be automatically imported to another machine instantaneously, without needing any action. The developer simply doesn't have to waste time reconfiguring their entire environment again, nor copying and pasting folders for settings to be reinstated. This feature received the name of ***Settings Sync**
-	![Visual Studio Code Settings Sync](./.img/vscode_settings_2.png)
+Moreover, VSCode allows settings to be automatically imported to another machine instantaneously, without needing any action. The developer simply doesn't have to waste time reconfiguring their entire environment again, nor copying and pasting folders for settings to be reinstated. This feature received the name of ***Settings Sync***
+![Visual Studio Code Settings Sync](./.img/vscode_settings_2.png)
 	
-	As you can see, I save my preferences into GitHub account. In my case, I usually use two machines and this feature simply is amazing for my situation.
+As you can see, I save my preferences into GitHub account. In my case, I usually use two machines and this feature simply is amazing for my situation.
 	
-2. Plugins Extensions
-	VSCode is what it is nowadays thankfully the world and extensive number of plugins, more than that, the plugins made by official providers are simply amazing. This world of plugins allow the VSCode having the ability to do literally anything. For instance, I usually work with Java language, and in 30 seconds I am able to create a *Spring Boot* from inside of VSCode. I do not need to go to *Spring Initializr*, because the plugin *Spring Boot Tools* already does the work! But I mentioned only one plugin, I have a lot of them!
+### Plugins Extensions
+
+VSCode is what it is nowadays thankfully the world and extensive number of plugins, more than that, the plugins made by official providers are simply amazing. This world of plugins allow the VSCode having the ability to do literally anything. For instance, I usually work with Java language, and in 30 seconds I am able to create a *Spring Boot* from inside of VSCode. I do not need to go to *Spring Initializr*, because the plugin *Spring Boot Tools* already does the work! But I mentioned only one plugin, I have a lot of them!
 	
-	Every plugin extension has its associated ID. When you search for a plugin on VSCode by its name, at page detail the plugin ID is shown. The list of plugins that I've had installed is (by ID):
-	- alexisvt.flutter-snippets
-    - dart-code.dart-code
-    - dart-code.flutter
-    - donjayamanne.githistory
-    - eamodio.gitlens
-    - github.remotehub
-    - github.vscode-pull-request-github
-    - github.vscode-github-actions
-    - GitHub.copilot
-    - GitHub.copilot-chat
-    - golang.go
-    - googlecloudtools.cloudcode
-    - humao.rest-client
-    - johnpapa.vscode-peacock
-    - ms-azuretools.vscode-docker
-    - ms-ceintl.vscode-language-pack-pt-br
-    - ms-kubernetes-tools.vscode-kubernetes-tools
-    - ms-python.isort
-    - ms-python.python
-    - ms-python.vscode-pylance
-    - ms-vscode-remote.remote-containers
-    - ms-vscode-remote.remote-wsl
-    - ms-vscode.azure-repos
-    - ms-vscode.remote-repositories
-    - redhat.fabric8-analytics
-    - redhat.java
-    - redhat.vscode-community-server-connector
-    - redhat.vscode-rsp-ui
-    - redhat.vscode-yaml
-    - sonarsource.sonarlint-vscode
-    - streetsidesoftware.code-spell-checker
-    - visualstudioexptteam.intellicode-api-usage-examples
-    - visualstudioexptteam.vscodeintellicode
-    - visualstudioexptteam.vscodeintellicode-completions
-    - vmware.vscode-boot-dev-pack
-    - vmware.vscode-spring-boot
-    - vscjava.vscode-java-debug
-    - vscjava.vscode-java-dependency
-    - vscjava.vscode-java-pack
-    - vscjava.vscode-java-test
-    - vscjava.vscode-maven
-    - vscjava.vscode-spring-boot-dashboard
-    - vscjava.vscode-spring-initializr
-    - vue.volar
+Every plugin extension has its associated ID. When you search for a plugin on VSCode by its name, at page detail the plugin ID is shown. The list of plugins that I've had installed (by ID) is [here](./3_vscode/extensions.txt).
+	
+### Remote Connection
+
+Perhaps this is the feature that I consider most important from those all. This feature allows the developer executing his VSCode from Windows connected directly on WSL and Docker's containers.
+
+#### WSL Connection
+
+VSCode has the capability of running on Windows with its workspace pointed directly to the WSL instance, with no delay, as you should know that WSL is treated like another hard driver, how it would be beside Windows, however it is inside of it.
+	
+This feature allows me to work with Windows and Ubuntu at same time, using Windows apps like office and essentials tools for developing on Ubuntu, like Docker. And I can get it without using dual boot. That's why I prefer work with WSL instead focusing in only one system.
+	
+The plugins that supports this feature is the **WSL** with the ID `ms-vscode-remote.remote-wsl`.
+	
+After installing the plugin, connect to the WSL instance use the hotkey **ctrl + shift + p** and type *connect to WSL*:
+![Visual Studio Code - connecting to the WSL](./.img/vscode_connecting_wsl.png)
+
+Then confirm that VSCode had been connected with success to your WSL instance:
+![Visual Studio Code - WSL connected](./.img/vscode_wsl.png)
+
+Now you can develop your applications using the Windows VSCode pointing to your Linux system.
