@@ -165,7 +165,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 #### powerlevel10k configuration
 
-1. Install new fonts from this [link](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k). The fonts will make your environment more ergonomic.
+1. Install new fonts from this [link](https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k), or download from [here](./2_ohmyzsh/fonts/). The fonts will make your environment more ergonomic.
 2. You can configure the layout of your ohmyzsh by importing my configuration file inside your home directory or through prompt command:
 	- You can use my *.p10k.zsh* configuration file. Just copy the [file](./2_ohmyzsh/.p10k.zsh) and paste inside your Ubuntu home directory.
 	- To configure by prompt command and generating your own *.p10k.zsh* file, just run the command: `p10k configure`.
@@ -308,3 +308,10 @@ The way I usually set up my VSCode workspace within a container is as follows:
 
 https://github.com/madzera/madzera-env/assets/42177697/78e2e71e-d7ab-4c39-a0c4-522b4742f9e4
 
+This approach shown in the video above has the major advantage of being extremely easy to connect the VSCode environment to the running container. The downside is that if your environment requires many plugins, it can be a bit frustrating to reinstall them, one by one, inside the container, since the plugins installed on your system do not automatically transfer into the container unless you configure them as a *Global Profile*, meaning all the VSCode plugins you set up as global become available every time the container is started. This is not ideal at all because there may be plugins that will not be used.
+
+Alternatively to this way of developing applications linked to a running container, the Dev Containers plugin offers the possibility of automatically generating a Docker container from the image associated with your project. This container that will be started can be read from your **Dockerfile** or **docker-compose.yaml** file. When this approach is chosen, VSCode itself generates a file called **devcontainer.json**, in which the developer has the option to install extra tools inside the container. The major advantage of this approach is that the container can be fully configured all at once before its initialization, and this also includes VSCode plugins, as this file allows configuring the list of VSCode plugins that will be automatically installed inside the container every time it starts. The disadvantage of this approach is that it is a bit more complex and also more prone to issues during the container's initialization. This approach will not be explained in this document.
+
+To know in details about that, this is the [article](https://code.visualstudio.com/docs/devcontainers/containers) with full explanation.
+
+## Extra Utilities
