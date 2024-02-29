@@ -306,6 +306,5 @@ The way I usually set up my VSCode workspace within a container is as follows:
 - I make any changes to the code.
 - The application is run again to confirm that the code changes are reflected.
 
-https://github.com/madzera/madzera-env/assets/42177697/78e2e71e-d7ab-4c39-a0c4-522b4742f9e4
-
+![Visual Studio Code - Dev Containers Plugin](./3_vscode/dev_containers/vscode_devcontainers.mp4)
 
