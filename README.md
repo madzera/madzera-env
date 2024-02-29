@@ -246,12 +246,12 @@ docker run hello-world
 
 Technically, the VSCode is a text editor. This tool just born for the purpose of editing texts, initially without pretension to become what this tool is nowadays. Even though it is considered as a text editor, particularly, I consider VSCode an IDE, but not just any IDE, rather the best IDE. My consideration takes into account the fact that VSCode actually does all what other IDEs do, like:
 
-	- Real time compilation;
-	- Auto-completion assist;
-	- Debugging;
-	- Wonderful integration with software components (like databases, server applications, Git, Docker, Kubernetes etc.);
-	- Abundance of extra plugins;
-	- etc.
+- Real time compilation;
+- Auto-completion assist;
+- Debugging;
+- Wonderful integration with software components (like databases, server applications, Git, Docker, Kubernetes etc.);
+- Abundance of extra plugins;
+- etc.
 
 In my opinion VSCode could not be defined like a simple text editor precisely because the reasons mentioned above. But why do I consider the VSCode being the best IDE?
 
@@ -283,9 +283,7 @@ VSCode has the capability of running on Windows with its workspace pointed direc
 	
 This feature allows me to work with Windows and Ubuntu at same time, using Windows apps like office and essentials tools for developing on Ubuntu, like Docker. And I can get it without using dual boot. That's why I prefer work with WSL instead focusing in only one system.
 	
-The plugins that supports this feature is the **WSL** with the ID `ms-vscode-remote.remote-wsl`.
-	
-After installing the plugin, connect to the WSL instance use the hotkey **ctrl + shift + p** and type *connect to WSL*:
+The plugins that supports this feature is the **WSL** with the ID `ms-vscode-remote.remote-wsl`. After installing the plugin, connect to the WSL instance use the hotkey **ctrl + shift + p** and type *connect to WSL*:
 ![Visual Studio Code - connecting to the WSL](./.img/vscode_connecting_wsl.png)
 
 Then confirm that VSCode had been connected with success to your WSL instance:
@@ -293,3 +291,21 @@ Then confirm that VSCode had been connected with success to your WSL instance:
 
 Now you can develop your applications using the Windows VSCode pointing to your Linux system.
 
+#### Remote Container Connection
+
+Besides the ability to directly connect to WSL from Windows, VSCode can delve even deeper into virtualization, at the level of containers. Easily, through the **Dev Containers** plugin (`ms-vscode-remote.remote-containers`), the VSCode workspace can be connected to a Docker container, either from an application image via Dockerfile or Docker-Compose, or simply through a container already running.
+
+This way of developing applications is the ideal and most productive way, as it allows the developers to connect their VSCode directly to the respective container of the application they are working on and doesn't require them to install any software components on their computer, as everything will be configured within the container. Additionally, it allows the workspace environment to be uniform for all other developers within the same project.
+
+The way I usually set up my VSCode workspace within a container is as follows:
+
+- First, I run the container corresponding to my image.
+- Next, using the DevContainers plugin, I attach my VSCode to the already running container.
+- A new instance of VSCode will open with the project code pointing directly to the application code inside the container.
+- I run the application.
+- I make any changes to the code.
+- The application is run again to confirm that the code changes are reflected.
+
+<video controls>
+  <source src="./3_vscode/dev_containers/vscode_devcontainers.mp4" type="video/mp4">
+</video>
