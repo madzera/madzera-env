@@ -250,7 +250,7 @@ Technically, the VSCode is a text editor. This tool just born for the purpose of
 - Auto-completion assist;
 - Debugging;
 - Wonderful integration with software components (like databases, server applications, Git, Docker, Kubernetes etc.);
-- Abundance of extra plugins;
+- Abundance of extras plugins;
 - etc.
 
 In my opinion VSCode could not be defined like a simple text editor precisely because the reasons mentioned above. But why do I consider the VSCode being the best IDE?
@@ -271,17 +271,17 @@ As you can see, I save my preferences into GitHub account. In my case, I usually
 
 VSCode is what it is nowadays thankfully the world and extensive number of plugins, more than that, the plugins made by official providers are simply amazing. This world of plugins allow the VSCode having the ability to do literally anything. For instance, I usually work with Java language, and in 30 seconds I am able to create a *Spring Boot* from inside of VSCode. I do not need to go to *Spring Initializr*, because the plugin *Spring Boot Tools* already does the work! But I mentioned only one plugin, I have a lot of them!
 	
-Every plugin extension has its associated ID. When you search for a plugin on VSCode by its name, at page detail the plugin ID is shown. The list of plugins that I've had installed (by ID) is [here](./3_vscode/extensions.txt).
+Every plugin extension has its associated ID. When you search for a plugin on VSCode by its name, on the page detail, the plugin ID is shown. The list of plugins that I've had installed (by ID) is [here](./3_vscode/extensions.txt).
 	
 ### Remote Connection
 
-Perhaps this is the feature that I consider most important from those all. This feature allows the developer executing his VSCode from Windows connected directly on WSL and Docker's containers.
+Perhaps this is the feature that I consider most important of those all. This feature allows the developer to run his VSCode from Windows connected directly on WSL and Docker's containers.
 
 #### WSL Connection
 
-VSCode has the capability of running on Windows with its workspace pointed directly to the WSL instance, with no delay, as you should know that WSL is treated like another hard driver, how it would be beside Windows, however it is inside of it.
+VSCode has the capability of running on Windows with its workspace pointed directly to the WSL instance, with no delay, as you should know that WSL is treated like another hard drive, how it would be beside Windows, however it is inside of it.
 	
-This feature allows me to work with Windows and Ubuntu at same time, using Windows apps like office and essentials tools for developing on Ubuntu, like Docker. And I can get it without using dual boot. That's why I prefer work with WSL instead focusing in only one system.
+This feature allows me to work with Windows and Ubuntu at same time, using Windows apps like office and essentials tools for developing on Ubuntu, like Docker. And I can get it without using dual boot. That's why I prefer to work with WSL instead focusing in only one system.
 	
 The plugins that supports this feature is the **WSL** with the ID `ms-vscode-remote.remote-wsl`. After installing the plugin, connect to the WSL instance use the hotkey **ctrl + shift + p** and type *connect to WSL*:
 ![Visual Studio Code - connecting to the WSL](./.img/vscode_connecting_wsl.png)
@@ -312,6 +312,6 @@ This approach shown in the video above has the major advantage of being extremel
 
 Alternatively to this way of developing applications linked to a running container, the Dev Containers plugin offers the possibility of automatically generating a Docker container from the image associated with your project. This container that will be started can be read from your **Dockerfile** or **docker-compose.yaml** file. When this approach is chosen, VSCode itself generates a file called **devcontainer.json**, in which the developer has the option to install extra tools inside the container. The major advantage of this approach is that the container can be fully configured all at once before its initialization, and this also includes VSCode plugins, as this file allows configuring the list of VSCode plugins that will be automatically installed inside the container every time it starts. The disadvantage of this approach is that it is a bit more complex and also more prone to issues during the container's initialization. This approach will not be explained in this document.
 
-To know in details about that, this is the [article](https://code.visualstudio.com/docs/devcontainers/containers) with full explanation.
+To know in detail about that, this is the [article](https://code.visualstudio.com/docs/devcontainers/containers) with full explanation.
 
 ## Extra Utilities
