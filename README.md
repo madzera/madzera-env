@@ -71,7 +71,7 @@ Another powerful advantage of using WSL is treating the system like a 'box', as 
 | Windows  | 11  |
 | Linux Distro  | Ubuntu 22.04.3 LTS  |
 
-### Installation
+### Installation <a name="wsl-installation"></a>
 
 1. You can install WSL by using Microsoft Store or by command line:
 
@@ -112,7 +112,7 @@ For importing, use:
 wsl --import <<NEW IMAGE NAME>> <<SOURCE DIR FILE>> <<FILENAME>>.tar
 ```
 
-### Configuration
+### Configuration <a name="wsl-configuration"></a>
 
 As I said before, the Windows OS and WSL share the same resources from your machine. Howerver, you can determine the maximum resources the WSL can use. Those resources are related to CPUs cores, memory, and memory swap.
 
