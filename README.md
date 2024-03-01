@@ -12,7 +12,7 @@
 
 - [About the MadZera Development Environment](#about-the-madzera-development-environment)
 - [WSL](#wsl)
-	- [Versions](#verions)
+	- [Versions](#versions)
 	- [Installation](#installation)
 	- [Configuration](#configuration) 
 - [Oh My ZSH](#oh-my-zsh)
