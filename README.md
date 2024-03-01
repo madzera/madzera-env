@@ -314,7 +314,7 @@ Alternatively to this way of developing applications linked to a running contain
 
 To know in detail about that, this is the [article](https://code.visualstudio.com/docs/devcontainers/containers) with full explanation.
 
-## Extra Utilities
+## Extras Utilities
 
 All the tools that have been shown in this document so far are the ones I consider essential to have a highly flexible, portable, and compact development environment. Now, in this section, I will present some tools that I usually use on Windows that are particularly valuable for specific situations:
 
@@ -336,3 +336,8 @@ on Linux, I use:
 
 # Conclusion
 
+In conclusion, it's easy to see that I strive to compress and make the most of what WSL with Ubuntu, OH My ZSH, Docker, and VSCode have to offer. These tools together are extremely powerful for application development, and I see few developers using this "combo".
+
+In practice, I usually perform periodic backups of WSL every 2 months, and if any issues occur that require restoring the environment, or if I'm simply on a new machine, I just need to import the most recent WSL backup and everything is readily available, akin to a VM snapshot.
+
+The keywords for this development environment I usually define as simple, compact, flexible, and portable. Everything a software developer needs to start their work regardless of the machine they are using.
