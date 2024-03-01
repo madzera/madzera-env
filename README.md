@@ -5,14 +5,41 @@
   </a>
 </p>
 
+# MadZera Application Development Environment
 “*A single and compacted development environment is like a minimalist apartment.*”
 
-# About the MadZera Development Environment
+## Glossary
+
+- [About the MadZera Development Environment](#about-the-madzera-development-environment)
+- [WSL](#wsl)
+	- [Versions](#verions)
+	- [Installation](#installation)
+	- [Configuration](#configuration) 
+- [Oh My ZSH](#oh-my-zsh)
+	- [Installation](#installation)
+		- [Prerequisites](#prerequisites)
+		- [ohmyzsh installation](#ohmyzsh-installation)
+		- [ohmyzsh configuration](#ohmyzsh-configuration)
+		- [powerlevel10k installation](#powerlevel10k-installation)
+		- [powerlevel10k configuration](#powerlevel10k-configuration)
+- [Docker](#docker)
+	- [Installation](#installation)
+	- [Configuration](#configuration)
+- [Visual Studio Code](#visual-studio-code)
+	- [Portable VSCode Settings](#portable-vscode-settings)
+	- [Plugins Extensions](#plugins-extensions)
+	- [Remote Connection](#remote-connection)
+		- [WSL Connection](#wsl-connection)
+		- [Remote Container Connection](#remote-container-connection)
+- [Extras Utilities](#extras-utilities)
+- [Conclusion](#conclusion)
+
+## About the MadZera Development Environment
 This is a repository that represents my personal development environment. I try to gather all possible tools and software that assist the software development process into one place, compacted and extremely organized, thus avoiding the bureaucratic process of configuration every time there is a new machine or when I need to reinstall everything again for any reason.
 
 My environment consists only into 4 parts:
 
-| Sofftware | Description |
+| Software | Description |
 |---|---|
 | OS  | WSL  |
 | Shell  | Oh My Zsh  |
@@ -26,9 +53,10 @@ development tools I just need of the vast plugins world that VSCode has to offer
 
 “*My goal is installing the minimum stuffs as possible.*”
 
-# WSL
+## WSL
 
 For me, the best OS is neither Windows nor Linux. It's both, combined into one.
+
 Nothing better than editing a document using Word, for example, and at the same machine using essential services like Docker inside of Windows. This combination makes the development process extremely efficient, as I could just alternate between Windows and Linux by only using ALT-TAB. With WSL it still becomes better because WSL is thought to interoperate files and commands in an easy way. Using a very usual example, if the user wants to run the Windows VSCode inside of Linux Terminal, it can be run by just typing `code` command.
 
 The WSL evolved so much in the last years. The Linux becomes an extension of the Windows, inheriting environment variables from Windows, allowing the execution of some Windows utilities inside of the own Linux terminal, and being extremely fast, because it is not a default virtualization as it is for the VirtualBox, for instance. The WSL adopts the **para-virtualization** concept, not hijacking machine resources, but instead of that, those resources are shared for both OS, it means the Linux uses the resources in a volatile way, it is not fixed.
@@ -102,7 +130,7 @@ Following, there is the code for the configuration example or, you can download 
 	swap=1GB
 ```
 
-# Oh My Zsh
+## Oh My Zsh
 
 Oh My Zsh is framework that works over the ZSH Shell. It allows you to style and customize your Shell to your liking, adding styles to your terminal, as well as helping you quite significantly when typing commands.
 
@@ -173,7 +201,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 Now, you have a wonderful terminal, increasing your productivity drastically.
 
-# Docker
+## Docker
 
 Nowadays, Docker is crucial for developing applications. It is a service platform that para-virtualizes the essentials parts of a Linux Operative System providing only what your application needs and then puts all necessary stuffs in a container. For generating a container, you need to build an image and consequently, your image becomes portable, passive for exportation.
 
@@ -242,7 +270,7 @@ Verify that you can run `docker` commands without `sudo`:
 docker run hello-world
 ```
 
-# Visual Studio Code
+## Visual Studio Code
 
 Technically, the VSCode is a text editor. This tool just born for the purpose of editing texts, initially without pretension to become what this tool is nowadays. Even though it is considered as a text editor, particularly, I consider VSCode an IDE, but not just any IDE, rather the best IDE. My consideration takes into account the fact that VSCode actually does all what other IDEs do, like:
 
@@ -334,7 +362,7 @@ on Linux, I use:
 | **nvim**  | Text editor.  |
 | **asdf**  | To manage every SDK runtime versions.  |
 
-# Conclusion
+## Conclusion
 
 In conclusion, it's easy to see that I strive to compress and make the most of what WSL with Ubuntu, OH My ZSH, Docker, and VSCode have to offer. These tools together are extremely powerful for application development, and I see few developers using this "combo".
 
