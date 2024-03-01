@@ -7,7 +7,7 @@
 
 “*A single and compacted development environment is like a minimalist apartment.*”
 
-## About the MadZera Development Environment
+# About the MadZera Development Environment
 This is a repository that represents my personal development environment. I try to gather all possible tools and software that assist the software development process into one place, compacted and extremely organized, thus avoiding the bureaucratic process of configuration every time there is a new machine or when I need to reinstall everything again for any reason.
 
 My environment consists only into 4 parts:
@@ -26,7 +26,7 @@ development tools I just need of the vast plugins world that VSCode has to offer
 
 “*My goal is installing the minimum stuffs as possible.*”
 
-## WSL
+# WSL
 
 For me, the best OS is neither Windows nor Linux. It's both, combined into one.
 Nothing better than editing a document using Word, for example, and at the same machine using essential services like Docker inside of Windows. This combination makes the development process extremely efficient, as I could just alternate between Windows and Linux by only using ALT-TAB. With WSL it still becomes better because WSL is thought to interoperate files and commands in an easy way. Using a very usual example, if the user wants to run the Windows VSCode inside of Linux Terminal, it can be run by just typing `code` command.
@@ -102,7 +102,7 @@ Following, there is the code for the configuration example or, you can download 
 	swap=1GB
 ```
 
-## Oh My Zsh
+# Oh My Zsh
 
 Oh My Zsh is framework that works over the ZSH Shell. It allows you to style and customize your Shell to your liking, adding styles to your terminal, as well as helping you quite significantly when typing commands.
 
@@ -173,7 +173,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 
 Now, you have a wonderful terminal, increasing your productivity drastically.
 
-## Docker
+# Docker
 
 Nowadays, Docker is crucial for developing applications. It is a service platform that para-virtualizes the essentials parts of a Linux Operative System providing only what your application needs and then puts all necessary stuffs in a container. For generating a container, you need to build an image and consequently, your image becomes portable, passive for exportation.
 
@@ -242,7 +242,7 @@ Verify that you can run `docker` commands without `sudo`:
 docker run hello-world
 ```
 
-## Visual Studio Code
+# Visual Studio Code
 
 Technically, the VSCode is a text editor. This tool just born for the purpose of editing texts, initially without pretension to become what this tool is nowadays. Even though it is considered as a text editor, particularly, I consider VSCode an IDE, but not just any IDE, rather the best IDE. My consideration takes into account the fact that VSCode actually does all what other IDEs do, like:
 
@@ -315,3 +315,24 @@ Alternatively to this way of developing applications linked to a running contain
 To know in detail about that, this is the [article](https://code.visualstudio.com/docs/devcontainers/containers) with full explanation.
 
 ## Extra Utilities
+
+All the tools that have been shown in this document so far are the ones I consider essential to have a highly flexible, portable, and compact development environment. Now, in this section, I will present some tools that I usually use on Windows that are particularly valuable for specific situations:
+
+| Utility | Objective |
+|---|---|
+| **Office++**  | For documentation. I use Word, OneNote and Excel to make the projects documentation.  |
+| **Notepad++**  | Usually I use notepad++ to paste some long text content or when I need to format/minify JSON content through the **JSON Viewer Plugin**.  |
+| **Postman**  | Even though I know that VSCode has a plugin with same intent, I prefer use Postman to call HTTP APIs.  |
+| **Drawn.io**  | I use this utility to make most of diagrams. |
+| **Typora**  | I use this utility to create/edit *.MD* files. This exact file was made using Typora. :)  |
+| **Beyond Compare**  | This software compares text files content and folders structure.  |
+
+on Linux, I use:
+
+| Utility | Objective |
+|---|---|
+| **nvim**  | Text editor.  |
+| **asdf**  | To manage every SDK runtime versions.  |
+
+# Conclusion
+
