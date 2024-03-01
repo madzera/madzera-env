@@ -23,8 +23,8 @@
 		- [powerlevel10k installation](#powerlevel10k-installation)
 		- [powerlevel10k configuration](#powerlevel10k-configuration)
 - [Docker](#docker)
-	- [Installation](#installation)
-	- [Configuration](#configuration)
+	- [Installation](#docker-installation)
+	- [Configuration](#docker-configuration)
 - [Visual Studio Code](#visual-studio-code)
 	- [Portable VSCode Settings](#portable-vscode-settings)
 	- [Plugins Extensions](#plugins-extensions)
@@ -211,7 +211,7 @@ Additionally, you as a developer do not need to worry about the installation of 
 
 There are two ways to install Docker inside Ubuntu distro, via Docker Desktop or Docker Engine. In this tutorial, I will focus only on the installation of Docker Engine, because it brings only what is necessary for the system, unlike the Docker Desktop. **Therefore, this section will only explain how to install the *Docker Engine* on Ubuntu**.
 
-### Installation
+### Installation {#docker-installation}
 
 Set up Docker's apt repository:
 
@@ -245,7 +245,7 @@ Now, the output should be looks like:
 
 If you can see this, congratulations! We are almost there.
 
-### Configuration
+### Configuration {#docker-configuration}
 
 When Docker is installed, it runs as a service on Ubuntu, meaning Docker Service (a.k.a *Docker Daemon*) must be started before you execute any command from your Docker Client. For security reasons, Docker Daemon does not startup every time the Ubuntu initializes, because it has no permission to run as root-level, making you manually starting the Docker Daemon every time your system initializes and being necessary to run any Docker command with `sudo`. To avoid this, you can create a group for Docker to grant root-level permission, so you do not need to type `sudo` every time you input a command.
 
