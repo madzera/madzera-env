@@ -31,7 +31,7 @@
 	- [Remote Connection](#remote-connection)
 		- [WSL Connection](#wsl-connection)
 		- [Remote Container Connection](#remote-container-connection)
-- [Extras Utilities](#extras-utilities)
+- [Extra Utilities](#extra-utilities)
 - [Conclusion](#conclusion)
 
 ## About the MadZera Development Environment
@@ -342,7 +342,7 @@ Alternatively to this way of developing applications linked to a running contain
 
 To know in detail about that, this is the [article](https://code.visualstudio.com/docs/devcontainers/containers) with full explanation.
 
-## Extras Utilities
+## Extra Utilities
 
 All the tools that have been shown in this document so far are the ones I consider essential to have a highly flexible, portable, and compact development environment. Now, in this section, I will present some tools that I usually use on Windows that are particularly valuable for specific situations:
 
