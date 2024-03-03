@@ -344,7 +344,7 @@ To know in detail about that, this is the [article](https://code.visualstudio.co
 
 ## Extra Utilities
 
-All the tools that have been shown in this document so far are the ones I consider essential to have a highly flexible, portable, and compact development environment. Now, in this section, I will present some tools that I usually use on Windows that are particularly valuable for specific situations:
+All the tools that have been shown here so far are the ones I consider essential to have a highly flexible, portable, and compact development environment. Now, in this section, I will present some tools that I usually use on Windows that are particularly valuable for specific situations:
 
 | Utility | Objective |
 |---|---|
