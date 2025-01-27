@@ -8,7 +8,7 @@
 # MadZera Application Development Environment
 “*A single and compacted development environment is like a minimalist apartment.*”
 
-## Glossary
+## Table of Contents
 
 - [About the MadZera Development Environment](#about-the-madzera-development-environment)
 - [WSL](#wsl)
